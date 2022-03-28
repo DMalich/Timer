@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>01 - Pomodoro Timer || Advent of CSS</title>
+</head>
+<body>
+    <div class = "wrapper">
+        <div class = "ring">
+            <svg width = "518" height = "518" viewBox = "0 0 518 518">
+                <circle stroke-width = "9px" cx = "259" cy = "259" r = "254" fill = "orange"></circle>
+            </svg>
+        </div>
+
+        <div class = "timer">
+            <div class = "time">
+                <div class = "minutes">
+                    <input type = "text" name = "minutes" value = "00" disabled>
+                </div>
+                <div class = "colon">:</div>
+                <div class = "seconds">
+                    <input type = "text" name = "seconds" value = "05" disabled>
+                </div>
+            </div>
+            <button class = "start">start</button>
+            <button class = "settings">
+                <img src = "./images/gear.svg" alt = "settings">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face {
+    font-family: "bbs";
+    src: url(./fonts/bebasneue-book-webfont.woff) format("woff"),
+        url(./fonts/bebasneue-book-webfont.woff2) format("woff2");
+}
+
+body {
+    align-items: center;
+    background: #2b2a30;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0;
+}
+
+.wrapper {
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+    display: flex;
+    height: 518px;
+    justify-content: center;
+    position: relative;
+    width: 518px;
+}
+
+.ring {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    stroke: #09A65A
+}
+
+.ending {
+    stroke: #9D0000;
+
+}
+
+.timer {
+    align-items: center;
+    background: radial-gradient(
+        71.4% 71.4% at 51.7% 28.6%,
+        #3a393f 0%,
+        #17171a 100%
+    );
+    box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.time {
+    display: flex;
+    font-family: 'bbs';
+    font-size: 160px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    background: none;
+    border-bottom: 1px dashed white;
+    border: 0;
+    color: white;
+    font-family: "bbs";
+    font-size: 160px;
+    outline: none;
+    text-align: center;
+    width: 150px;
+}
+
+input[type = "text"]:disabled{
+    border-bottom: none;
+}
+
+.start{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.start:hover{
+    opacity: 1;
+}
+
+.settings{
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.settings:hover{
+    opacity: 1;
+}
+
